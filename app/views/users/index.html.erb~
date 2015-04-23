@@ -1,6 +1,6 @@
 <% if session[:user_id] == nil %>
   <h1 class="emptyStoreMessage">NICE TRY!</h1> 
-  <h2>You're not Authorized!</h2>
+  <h2>You're not authorized to view database!</h2>
 
 
  <% elsif User.find(session[:user_id]).email != 'weldemicael.1@osu.edu' %>
