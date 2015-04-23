@@ -1,3 +1,13 @@
+<% if session[:user_id] == nil %>
+  <h1 class="emptyStoreMessage">NICE TRY!</h1> 
+  <h2>You're not authorized to view database!</h2>
+
+
+ <% elsif User.find(session[:user_id]).email != 'weldemicael.1@osu.edu' %>
+        <p class="emptyStoreMessage">You are not admin!</p>
+  	<h4><%= link_to 'Login', login_path %></h4>
+<% else %>
+
 <h1>Orders Database:</h1>
 
 <table>
