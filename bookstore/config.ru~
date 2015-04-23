@@ -2,7 +2,7 @@
 
 require ::File.expand_path('../config/environment',  __FILE__)
 require 'rubygems'
-require 'sinatra'
+require 'sinatara'
 require './web'
 run Rails.application
  
