@@ -5,7 +5,7 @@
 
  <% elsif (admin != 'weldemicael.1@osu.edu')||(admin != 'yan.656@osu.edu')||(admin != 'asadi.7@osu.edu')||(admin != 'uppal.18@osu.edu') %>
         <h2 class="emptyStoreMessage">You are not admin!</h2>
-  	<h4><%= link_to 'Login', login_path %></h4>
+  	<h4><%= link_to 'Admin Login', login_path %></h4>
 <% else %>
 
 	<h1>Orders Database:</h1>
