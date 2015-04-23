@@ -1,3 +1,9 @@
+<% if session[:user_id].email != 'weldemicael.1@osu.edu' %>
+  <h1 class="emptyStoreMessage">NICE TRY!</h1> 
+  <h2>You're not Authorized!</h2>
+<% else %>
+
+
 <h1>Listing users</h1>
 <% if notice %>
 <p id="notice"><%= notice %></p>
@@ -26,3 +32,5 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+
+<% end %>

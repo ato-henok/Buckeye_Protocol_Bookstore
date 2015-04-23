@@ -1,5 +1,6 @@
-<% if session[:user_id].email != 'weldemicael.1@osu.edu' %>
-  <h1 class="emptyStoreMessage">NICE TRY! Not Authorized!</h1>
+<% if (session[:user_id].email != 'weldemicael.1@osu.edu') || (session[:user_id] == nil) %>
+  <h1 class="emptyStoreMessage">NICE TRY!</h1> 
+  <h2>You're not Authorized!</h2>
 <% else %>
 
 <h1>Listing orders</h1>
