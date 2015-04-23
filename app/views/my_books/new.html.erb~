@@ -4,6 +4,7 @@
 
 <% if @books.length == 0 %>
   <p class="emptyStoreMessage">You currently don't have any books for sale. Click "Add" to add a book to your store.</p>
+  <h4><%= link_to 'Add', new_book_path %></h4>
 <% else %>
 
       <table>

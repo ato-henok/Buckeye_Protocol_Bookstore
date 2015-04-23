@@ -1,6 +1,5 @@
 <% if session[:user_id].email != 'weldemicael.1@osu.edu' %>
-  <p class="emptyStoreMessage">NICE TRY! Not Authorized!</p>
-  <h4><%= link_to 'Login', login_path %></h4>
+  <h1 class="emptyStoreMessage">NICE TRY! Not Authorized!</h1>
 <% else %>
 
 
