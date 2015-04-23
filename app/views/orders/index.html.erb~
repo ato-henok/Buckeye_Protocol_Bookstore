@@ -1,9 +1,4 @@
-<% if (session[:user_id].email != 'weldemicael.1@osu.edu') || (session[:user_id] == nil) %>
-  <h1 class="emptyStoreMessage">NICE TRY!</h1> 
-  <h2>You're not Authorized!</h2>
-<% else %>
-
-<h1>Listing orders</h1>
+<h1>Orders database:</h1>
 
 <table>
   <thead>
@@ -31,4 +26,3 @@
 
 <%= link_to 'New Order', new_order_path %>
 
-<% end %>

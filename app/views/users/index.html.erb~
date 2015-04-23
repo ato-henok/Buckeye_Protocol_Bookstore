@@ -1,17 +1,10 @@
-<% if (session[:user_id].email != 'weldemicael.1@osu.edu') || (session[:user_id] == nil) %>
+<h1>Users Database</h1>
 
-<% if session[:user_id] == nil %>
-  <h1 class="emptyStoreMessage">NICE TRY!</h1> 
-  <h2>You're not Authorized!</h2>
-
-
- <% elsif session[:user_id]email != 'weldemicael.1@osu.edu' %>
-        <p class="emptyStoreMessage">You are not admin!</p>
-  	<h4><%= link_to 'Login', login_path %></h4>
+<% if session[:user_id].email != 'weldemicael.1@osu.edu' %>
+        <h1 class="emptyStoreMessage">NICE TRY!</h1> 
+        <h2>You're not Authorized!</h2>
 <% else %>
 
-
-<h1>Listing users</h1>
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
