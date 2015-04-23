@@ -1,0 +1,24 @@
+body{
+  background-image: url("book2.jpg");
+
+}
+.container-fluid{
+  background-color: lightgray;
+}
+
+#banner{
+  background-color: #be9f9f;
+}
+
+td{
+  padding: 0px 10px 0px 15px;
+}
+
+table{
+  border-spacing: 15px;
+  border-collapse: separate;
+}
+
+.emptyStoreMessage{
+  color: red;
+}

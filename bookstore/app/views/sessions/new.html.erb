@@ -1,0 +1,38 @@
+<h1>Log in</h1>
+
+<%= form_tag sessions_path do %>
+  <div class="field">
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Log in" %></div>
+<% end %>
+
+
+<!--<div class="bookstore_form" >
+  <% if flash[:alert] %>
+    <p id="notice" ><%= flash[:alert] %></p>
+  <% end %>
+  <%= form_tag do %>
+    <fieldset>
+      <legend>Please Log In</legend>
+      <div>
+	<label for="email" >Email:</label>
+	<%= text_field_tag :email, params[:email] %>
+      </div>
+      <div>
+	<label for="password" >Password:</label>
+	<%= password_field_tag :password, params[:password] %>
+      </div>
+      <div>
+	<%= submit_tag "Login" %>
+      </div>
+    </fieldset>
+  <% end %>
+</div>-->
+
+<p>Don't have an account? <%= link_to 'Click here to Signup', new_user_path %></p>

@@ -1,0 +1,41 @@
+<h2>Books you have ordered:</span></h2>
+
+<% if @orders.length == 0 %>
+  <p class="emptyStoreMessage">You currently don't have any orders.</p>
+<% else %>
+
+      <table>
+	<thead>
+	  <tr>
+	    <th>Title</th>
+	    <th>Condition</th>
+	    <th>Price</th>
+	    <th>ISBN</th>
+	    <th colspan="3"></th>
+	  </tr>
+	</thead>
+	
+
+	<tbody>
+
+        <% @orders.each do |order| %>
+	   <% book = Book.find(order.book_id) %>
+	    <tr>
+	      <td><%= book. title %></td>
+	      <td><%= book.condition %></td>
+	      <td><%= book.price %></td>
+	      <td><%= book.isbn %></td>
+	      <td><%= link_to 'Show', book %></td>
+	    </tr>
+	<% end %>
+	</tbody>
+	
+      </table>
+
+<% end %>
+
+
+
+<h4><%= link_to 'Back', admin_path %></h4>
+<h4><%= link_to 'Logout', logout_path %></h4>
+

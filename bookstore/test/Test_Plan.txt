@@ -1,0 +1,17 @@
+Test Plan:
+
+The team test with the following methods:
+
+1. Validations on models
+   There are validations on Book, User, and Order models. They test to make sure user input matches the requirement.
+
+2. Rails Testing functionality
+   'rake test' is also used to assert the controllers and their methods
+
+3. Testing by using
+	   Finally, the team tested by creating multiple users, book, and orders and interacting with the web app. All possible cases were tested, such as:
+	   What happens when you don't login and try to view home page?
+	   What happens when you go to "My Books" there are no books there?
+           What happens when you go to "My Orders" there are no books there?
+           Does user get "Thanks" message after buying?
+           Does seller get "Congrats" message when their book is ordered?
