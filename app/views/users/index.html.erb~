@@ -1,11 +1,11 @@
-<% if session[:user_id] == nil %>
+<% admin = User.find(session[:user_id]).email %>
+<% if admin == nil %>
   <h1 class="emptyStoreMessage">NICE TRY!</h1> 
   <h2>You're not authorized to view database!</h2>
 
- <% admin = User.find(session[:user_id]).email %>
  <% elsif (admin != 'weldemicael.1@osu.edu')||(admin != 'yan.656@osu.edu')||(admin != 'asadi.7@osu.edu')||(admin != 'uppal.18@osu.edu') %>
         <h2 class="emptyStoreMessage">You are not admin!</h2>
-  	<h4><%= link_to 'Login', login_path %></h4>
+  	<h4><%= link_to 'Admin Login', login_path %></h4>
 <% else %>
 
         <h1>Users Database</h1>
