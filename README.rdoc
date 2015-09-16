@@ -1,5 +1,12 @@
 == README
 
+==This webapp is live at http://buckeyeprotocol.herokuapp.com/ 
+
+==Login with the following for trial purposes:
+==    Username: sample.1@osu.edu
+==    Password: sample
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
